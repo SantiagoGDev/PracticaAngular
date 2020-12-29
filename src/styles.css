@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --Soft_Blue: hsl(231, 69%, 60%);
+  --Soft_Red: hsl(0, 94%, 66%);
+  --Grayish_Blue: hsl(229, 8%, 60%);
+  --Very_Dark_Blue: hsl(229, 31%, 21%);
+  --titles:6vmin;
+  --texto:22px;
+  --columns: 1fr 1fr;
+}
+@media screen and (max-width: 1130px) {
+  :root {
+    --titles:40px;
+  }
+}
+@media screen and (max-width: 870px) {
+  :root {
+    --titles:7vmin;
+    --columns: 1fr;
+  }
+}
+
+body {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+}
+
+main{
+  width: 100%;
+  overflow: hidden;
+}

@@ -1,0 +1,20 @@
+<header class="hero">
+    <figure class="hero__box-logo">
+        <a class="main-menu__link">
+            <img src="assets/images/logo-bookmark.svg" alt="" class="hero__logo">
+        </a>
+    </figure>
+    <nav class="main-menu {{showMenu ? 'main-menu--open' : 0 }}">
+        <a class="main-menu__link">Home</a>
+        <a routerLink="login" class="btn main-menu__btn">Login</a>
+
+        <div class="main-menu__social">
+            <img src="assets/images/icon-facebook.svg" alt="" class="main-menu__icon-social">
+            <img src="assets/images/icon-twitter.svg" alt="" class="main-menu__icon-social">
+        </div>
+
+    </nav>
+    <div class="menu-bar">
+        <img (click)="showMenu = !showMenu" src="assets/images/icon-{{ showMenu ? 'close' : 'hamburger' }}.svg" alt="barras" class="menu-bar__icon">
+    </div>
+</header>

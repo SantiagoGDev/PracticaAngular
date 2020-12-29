@@ -1,0 +1,29 @@
+<section class="features">
+    <article class="features-intro">
+        <h2 class="features-intro__title">Features</h2>
+        <p class="features-intro__text">
+            Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
+        </p>
+    </article>
+    <article class="features-slider">
+        <div class="features-slider__box-items">
+            <p *ngFor="let item of features; let i = index" class="features-slider__text" (click)="tabFeature(i)">
+                {{item.tab}}
+                <span class="features-slider__barra {{currentFeature === i ?  'features-slider__barra--active' : 0 }}"></span>
+            </p>
+
+        </div>
+        <div class="features-slider__box-options">
+            <div class="features-slider__option">
+                <figure class="features-slider__option-box-img">
+                    <img [src]="getFeature.img" alt="" class="features-slider__option-img">
+                </figure>
+                <div class="features-slider__option-box-text">
+                    <h3 class="features-slider__option-title">{{getFeature.title}}</h3>
+                    <p class="features-slider__option-parrafo"> {{getFeature.text}} </p>
+                    <button (click)="showFeature()" class="features-slider__option-btn btn">More Info</button>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>

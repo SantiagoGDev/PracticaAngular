@@ -1,0 +1,20 @@
+<div class="feature-box">
+    <div class="feature__box-text">
+        <h2 class="feature__title">
+            Feature {{feature.tab}}
+        </h2>
+        <hr>
+    </div>
+    <div class="features-slider__box-options">
+        <div class="features-slider__option">
+            <figure class="features-slider__option-box-img">
+                <img [src]="feature.img" alt="" class="features-slider__option-img">
+            </figure>
+            <div class="features-slider__option-box-text">
+                <h3 class="features-slider__option-title">{{feature.title}}</h3>
+                <p class="features-slider__option-parrafo"> {{feature.text}} </p>
+                <a routerLink="/home" class="features-slider__option-btn btn">Regresar</a>
+            </div>
+        </div>
+    </div>
+</div>
