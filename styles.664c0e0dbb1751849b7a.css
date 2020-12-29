@@ -1,0 +1,1 @@
+:root{--Soft_Blue:#5368df;--Soft_Red:#fa5757;--Grayish_Blue:#9194a1;--Very_Dark_Blue:#252b46;--titles:6vmin;--texto:22px;--columns:1fr 1fr}@media screen and (max-width:1130px){:root{--titles:40px}}@media screen and (max-width:870px){:root{--titles:7vmin;--columns:1fr}}body{font-size:16px;font-family:Rubik,sans-serif}main{width:100%;overflow:hidden}
