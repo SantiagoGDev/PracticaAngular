@@ -1,0 +1,15 @@
+<section class="questions">
+    <article class="questions__box-main">
+        <h2 class="questions__title">Frequently Asked Questions</h2>
+        <p class="questions__text">
+            Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.
+        </p>
+    </article>
+    <article class="questions__box-content">
+        <details class="questions__item" *ngFor="let item of questions">
+            <summary class="questions__item-title">{{item.question}}</summary>
+            <p class="questions__item-text">{{item.answer}}</p>
+        </details>
+    </article>
+    <button class="questions_btn">More Info</button>
+</section>

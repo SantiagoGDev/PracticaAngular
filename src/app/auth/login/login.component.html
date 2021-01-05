@@ -1,0 +1,27 @@
+<div class="box-form">
+    <div class="box-align">
+        <div class="info">
+            <div class="info__box">
+                <h2 class="info__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                <figure class="info__box-img">
+                    <img src="assets/images/login.svg" alt="" class="info__img">
+                </figure>
+            </div>
+        </div>
+        <div class="form">
+            <div class="form__box-option">
+                <div class="form__option">
+                    <span (click)="showSingIn()" class="form__option-login">
+                        SING IN
+                    </span>
+                    <span (click)="showRegister()" class="form__option-register">
+                        SING UP
+                    </span>
+                </div>
+            </div>
+            <app-register *ngIf="register"></app-register>
+            <app-sing-in *ngIf="singIn"></app-sing-in>
+          
+        </div>
+    </div>
+</div>

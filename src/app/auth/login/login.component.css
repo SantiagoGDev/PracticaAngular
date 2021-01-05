@@ -1,0 +1,79 @@
+.box-form {
+    margin:  100px auto;
+    padding: 10%;
+}
+.box-align{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.info__box-img{
+    display: grid;
+    place-items:center;
+}
+.info__img{
+    width:350px;
+    height: 350px;
+    object-fit: contain;
+}
+.info{
+    padding: 5%;
+    background-color:var(--Soft_Red);
+    border: 1px solid #fff;
+}
+.info__title{
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.form{
+    padding: 5%;
+}
+
+.form__box-option{
+    display: flex;
+    flex-direction: column;
+}
+.form__option{
+    align-self: flex-end;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    text-align: center;
+
+}
+.form__option-login,
+.form__option-register{
+    display: block;
+    padding: 12px 22px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform ease .8s; 
+
+}
+.form__option-login{
+    background-color:var(--Soft_Red);
+    border-radius: 30px 0 0  30px;
+}
+.form__option-register{
+    background-color: #192a72;
+    border-radius: 0 30px 30px 0;
+}
+
+.form__option-login:hover,
+.form__option-register:hover{
+    transform: scale(1.09);
+}
+
+.form{
+    background-color: var(--Very_Dark_Blue);
+}

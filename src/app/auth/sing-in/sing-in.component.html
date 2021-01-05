@@ -1,0 +1,20 @@
+<form class="form" [formGroup]="loginForm" (ngSubmit)="sendData(loginForm.value)">
+	<h2 class="form__title">Login</h2>
+	<div class="form__component">
+		<label for="email" class="form__label">Correo Electronico</label>
+		<input type="text" formControlName="email" class="form__input" id="email" placeholder="Correo Electronico">
+		<p *ngIf="isValidCampo(loginForm,'email')" class="form__message">Correo es invalido, un correo valido es : jhon@gmail.com</p>
+	</div>
+	<div class="form__component">
+		<label for="password" class="form__label">Contraseña</label>
+		<input type="password"  formControlName="password" class="form__input" id="password">
+		<p class="form__message" *ngIf="isValidCampo(loginForm,'password')" >Se requiere ingresar la contraseña</p>
+	</div>
+
+	<button [disabled]="loginForm.invalid" class="form__btn">Ingresar</button>
+
+	<div class="form-final">
+		<a class="form-final__link">Registrarse</a>
+		<a class="form-final__link">¿Has olvidado tu Contraseña?</a>
+	</div>
+</form>
